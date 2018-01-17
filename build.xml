@@ -1,5 +1,5 @@
 <!-- Ant build file for pyon -->
-<project name="pyon" default="info" basedir=".">
+<project name="helloworld" default="info" basedir=".">
     <description>
         This is the ANT build file for the OOI CI Python capability
         container and service platform.
@@ -9,7 +9,7 @@
     <taskdef resource="pyAntTasks.properties" classpath="scripts/lib/pyAntTasks-1.3.3.jar"/>
 
     <!-- set global properties for this build -->
-    <property name="src" location="pyon"/>
+    <property name="src" location="helloworld"/>
     <property name="build" location="build"/>
     <property name="dist"  location="dist"/>
 
@@ -40,7 +40,7 @@
         <delete dir="interface"/>
         <delete dir="${build}"/>
         <delete dir="${dist}"/>
-        <delete dir="pyon.egg-info"/>
+        <delete dir="helloworld.egg-info"/>
         <!--<antcall target="remeggs"/>-->
     </target>
 
